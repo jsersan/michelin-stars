@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de Datos JSON</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            padding: 30px;
+        }
+        
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            color: #666;
+            margin-bottom: 30px;
+        }
+        
+        .file-section {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        
+        .file-section h2 {
+            font-size: 18px;
+            color: #495057;
+            margin-bottom: 15px;
+        }
+        
+        input[type="file"] {
+            width: 100%;
+            padding: 10px;
+            border: 2px dashed #dee2e6;
+            border-radius: 5px;
+            background: white;
+            cursor: pointer;
+        }
+        
+        input[type="file"]:hover {
+            border-color: #667eea;
+        }
+        
+        .results {
+            margin-top: 30px;
+        }
+        
+        .result-box {
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        
+        .success {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            color: #155724;
+        }
+        
+        .error {
+            background: #f8d7da;
+            border: 1px solid #f5c6cb;
+            color: #721c24;
+        }
+        
+        .warning {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            color: #856404;
+        }
+        
+        .info {
+            background: #d1ecf1;
+            border: 1px solid #bee5eb;
+            color: #0c5460;
+        }
+        
+        .stat {
+            display: inline-block;
+            margin-right: 20px;
+            font-weight: bold;
+        }
+        
+        .icon {
+            font-size: 24px;
+            margin-right: 10px;
+        }
+        
+        ul {
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+        
+        li {
+            margin: 5px 0;
+        }
+        
+        button {
+            background: #667eea;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+        
+        button:hover {
+            background: #5568d3;
+        }
+        
+        button:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🔍 Verificador de Datos JSON</h1>
+        <p class="subtitle">Valida tus archivos JSON antes de usarlos en la aplicación</p>
+        
+        <div class="file-section">
+            <h2>📍 Restaurantes Michelin</h2>
+            <input type="file" id="fileRestaurantes" accept=".json">
+        </div>
+        
+        <div class="file-section">
+            <h2>🏨 Hoteles Premium</h2>
+            <input type="file" id="fileHoteles" accept=".json">
+        </div>
+        
+        <button id="btnVerificar" disabled>Verificar Datos</button>
+        
+        <div id="results" class="results"></div>
+    </div>
+
+    <script>
+        let dataRestaurantes = null;
+        let dataHoteles = null;
+        
+        document.getElementById('fileRestaurantes').addEventListener('change', function(e) {
+            const file = e.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(event) {
+                    try {
+                        dataRestaurantes = JSON.parse(event.target.result);
+                        checkButtonState();
+                    } catch (error) {
+                        alert('Error al leer el archivo de restaurantes: ' + error.message);
+                    }
+                };
+                reader.readAsText(file);
+            }
+        });
+        
+        document.getElementById('fileHoteles').addEventListener('change', function(e) {
+            const file = e.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(event) {
+                    try {
+                        dataHoteles = JSON.parse(event.target.result);
+                        checkButtonState();
+                    } catch (error) {
+                        alert('Error al leer el archivo de hoteles: ' + error.message);
+                    }
+                };
+                reader.readAsText(file);
+            }
+        });
+        
+        function checkButtonState() {
+            const btn = document.getElementById('btnVerificar');
+            btn.disabled = !(dataRestaurantes || dataHoteles);
+        }
+        
+        document.getElementById('btnVerificar').addEventListener('click', function() {
+            const resultsDiv = document.getElementById('results');
+            resultsDiv.innerHTML = '';
+            
+            if (dataRestaurantes) {
+                verificarRestaurantes(dataRestaurantes, resultsDiv);
+            }
+            
+            if (dataHoteles) {
+                verificarHoteles(dataHoteles, resultsDiv);
+            }
+        });
+        
+        function verificarRestaurantes(data, container) {
+            const resultBox = document.createElement('div');
+            resultBox.className = 'result-box info';
+            
+            let html = '<h3><span class="icon">🍽️</span>Análisis de Restaurantes Michelin</h3>';
+            
+            const restaurantes = data.restaurantes || [];
+            const total = restaurantes.length;
+            const con3 = restaurantes.filter(r => r.estrellas === 3).length;
+            const con2 = restaurantes.filter(r => r.estrellas === 2).length;
+            const con1 = restaurantes.filter(r => r.estrellas === 1).length;
+            
+            html += `<p><span class="stat">Total: ${total}</span>`;
+            html += `<span class="stat">⭐⭐⭐: ${con3}</span>`;
+            html += `<span class="stat">⭐⭐: ${con2}</span>`;
+            html += `<span class="stat">⭐: ${con1}</span></p>`;
+            
+            // Verificaciones
+            const problemas = [];
+            const advertencias = [];
+            
+            if (con3 !== 16) {
+                advertencias.push(`Se esperan 16 restaurantes de 3 estrellas, se encontraron ${con3}`);
+            }
+            
+            if (con2 !== 45) {
+                advertencias.push(`Se esperan 45 restaurantes de 2 estrellas, se encontraron ${con2}`);
+            }
+            
+            // Verificar estructura
+            restaurantes.forEach((r, idx) => {
+                if (!r.nombre) problemas.push(`Restaurante ${idx + 1}: falta campo 'nombre'`);
+                if (!r.estrellas) problemas.push(`Restaurante ${idx + 1}: falta campo 'estrellas'`);
+                if (!r.ciudad) problemas.push(`Restaurante ${idx + 1}: falta campo 'ciudad'`);
+                if (r.latitud === undefined) problemas.push(`Restaurante ${idx + 1}: falta campo 'latitud'`);
+                if (r.longitud === undefined) problemas.push(`Restaurante ${idx + 1}: falta campo 'longitud'`);
+                
+                // Verificar coordenadas válidas para España
+                if (r.latitud && r.longitud) {
+                    if (r.latitud < 35 || r.latitud > 44 || r.longitud < -10 || r.longitud > 5) {
+                        advertencias.push(`${r.nombre}: coordenadas fuera de España (${r.latitud}, ${r.longitud})`);
+                    }
+                }
+            });
+            
+            if (problemas.length === 0 && advertencias.length === 0) {
+                resultBox.className = 'result-box success';
+                html += '<p>✅ <strong>Archivo de restaurantes válido y listo para usar</strong></p>';
+            } else {
+                if (problemas.length > 0) {
+                    resultBox.className = 'result-box error';
+                    html += '<p>❌ <strong>Problemas encontrados:</strong></p><ul>';
+                    problemas.slice(0, 5).forEach(p => html += `<li>${p}</li>`);
+                    if (problemas.length > 5) {
+                        html += `<li>... y ${problemas.length - 5} problemas más</li>`;
+                    }
+                    html += '</ul>';
+                }
+                
+                if (advertencias.length > 0) {
+                    if (problemas.length === 0) resultBox.className = 'result-box warning';
+                    html += '<p>⚠️ <strong>Advertencias:</strong></p><ul>';
+                    advertencias.forEach(a => html += `<li>${a}</li>`);
+                    html += '</ul>';
+                }
+            }
+            
+            resultBox.innerHTML = html;
+            container.appendChild(resultBox);
+        }
+        
+        function verificarHoteles(data, container) {
+            const resultBox = document.createElement('div');
+            resultBox.className = 'result-box info';
+            
+            let html = '<h3><span class="icon">🏨</span>Análisis de Hoteles Premium</h3>';
+            
+            const hoteles = data.hoteles || [];
+            const total = hoteles.length;
+            const con5 = hoteles.filter(h => parseInt(h.estrellas) === 5).length;
+            const con4 = hoteles.filter(h => parseInt(h.estrellas) === 4).length;
+            
+            html += `<p><span class="stat">Total: ${total}</span>`;
+            html += `<span class="stat">★★★★★: ${con5}</span>`;
+            html += `<span class="stat">★★★★: ${con4}</span></p>`;
+            
+            const problemas = [];
+            const advertencias = [];
+            
+            hoteles.forEach((h, idx) => {
+                if (!h.nombre) problemas.push(`Hotel ${idx + 1}: falta campo 'nombre'`);
+                if (!h.estrellas) problemas.push(`Hotel ${idx + 1}: falta campo 'estrellas'`);
+                if (!h.ciudad) problemas.push(`Hotel ${idx + 1}: falta campo 'ciudad'`);
+                if (h.latitud === undefined) problemas.push(`Hotel ${idx + 1}: falta campo 'latitud'`);
+                if (h.longitud === undefined) problemas.push(`Hotel ${idx + 1}: falta campo 'longitud'`);
+                
+                const estrellas = parseInt(h.estrellas);
+                if (estrellas !== 4 && estrellas !== 5) {
+                    advertencias.push(`${h.nombre}: tiene ${estrellas} estrellas (solo se visualizan 4 y 5)`);
+                }
+                
+                if (h.latitud && h.longitud) {
+                    if (h.latitud < 35 || h.latitud > 44 || h.longitud < -10 || h.longitud > 5) {
+                        advertencias.push(`${h.nombre}: coordenadas fuera de España (${h.latitud}, ${h.longitud})`);
+                    }
+                }
+            });
+            
+            if (problemas.length === 0 && advertencias.length === 0) {
+                resultBox.className = 'result-box success';
+                html += '<p>✅ <strong>Archivo de hoteles válido y listo para usar</strong></p>';
+            } else {
+                if (problemas.length > 0) {
+                    resultBox.className = 'result-box error';
+                    html += '<p>❌ <strong>Problemas encontrados:</strong></p><ul>';
+                    problemas.slice(0, 5).forEach(p => html += `<li>${p}</li>`);
+                    if (problemas.length > 5) {
+                        html += `<li>... y ${problemas.length - 5} problemas más</li>`;
+                    }
+                    html += '</ul>';
+                }
+                
+                if (advertencias.length > 0) {
+                    if (problemas.length === 0) resultBox.className = 'result-box warning';
+                    html += '<p>⚠️ <strong>Advertencias:</strong></p><ul>';
+                    advertencias.forEach(a => html += `<li>${a}</li>`);
+                    html += '</ul>';
+                }
+            }
+            
+            resultBox.innerHTML = html;
+            container.appendChild(resultBox);
+        }
+    </script>
+</body>
+</html>

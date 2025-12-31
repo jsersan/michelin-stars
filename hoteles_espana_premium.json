@@ -1,0 +1,708 @@
+{
+  "guia": "España 2025",
+  "total_hoteles": 80,
+  "hoteles": [
+    {
+      "nombre": "Hotel Ritz Madrid",
+      "estrellas": 5,
+      "ciudad": "Madrid",
+      "provincia": "Madrid",
+      "latitud": 40.4167,
+      "longitud": -3.6933,
+      "web": "www.mandarinoriental.com/madrid/hotel-ritz"
+    },
+    {
+      "nombre": "Four Seasons Hotel Madrid",
+      "estrellas": 5,
+      "ciudad": "Madrid",
+      "provincia": "Madrid",
+      "latitud": 40.4189,
+      "longitud": -3.6920,
+      "web": "www.fourseasons.com/madrid"
+    },
+    {
+      "nombre": "Hotel Villa Magna",
+      "estrellas": 5,
+      "ciudad": "Madrid",
+      "provincia": "Madrid",
+      "latitud": 40.4257,
+      "longitud": -3.6880,
+      "web": "www.rosewoodhotels.com/villa-magna"
+    },
+    {
+      "nombre": "Hotel Wellington",
+      "estrellas": 5,
+      "ciudad": "Madrid",
+      "provincia": "Madrid",
+      "latitud": 40.4231,
+      "longitud": -3.6798,
+      "web": "www.hotel-wellington.com"
+    },
+    {
+      "nombre": "Gran Meliá Palacio de los Duques",
+      "estrellas": 5,
+      "ciudad": "Madrid",
+      "provincia": "Madrid",
+      "latitud": 40.4192,
+      "longitud": -3.7115,
+      "web": "www.melia.com"
+    },
+    {
+      "nombre": "Hotel Único Madrid",
+      "estrellas": 5,
+      "ciudad": "Madrid",
+      "provincia": "Madrid",
+      "latitud": 40.4295,
+      "longitud": -3.6886,
+      "web": "www.unicohotelmadrid.com"
+    },
+    {
+      "nombre": "VP Plaza España Design",
+      "estrellas": 5,
+      "ciudad": "Madrid",
+      "provincia": "Madrid",
+      "latitud": 40.4240,
+      "longitud": -3.7120,
+      "web": "www.viceroyhotelsandresorts.com"
+    },
+    {
+      "nombre": "Hotel Santo Mauro",
+      "estrellas": 5,
+      "ciudad": "Madrid",
+      "provincia": "Madrid",
+      "latitud": 40.4361,
+      "longitud": -3.6933,
+      "web": "www.marriott.com"
+    },
+    {
+      "nombre": "Hotel Fenix Gran Meliá",
+      "estrellas": 4,
+      "ciudad": "Madrid",
+      "provincia": "Madrid",
+      "latitud": 40.4228,
+      "longitud": -3.6890,
+      "web": "www.melia.com"
+    },
+    {
+      "nombre": "Hotel Urban Madrid",
+      "estrellas": 5,
+      "ciudad": "Madrid",
+      "provincia": "Madrid",
+      "latitud": 40.4154,
+      "longitud": -3.6984,
+      "web": "www.derbyhotels.com"
+    },
+    {
+      "nombre": "Hotel Arts Barcelona",
+      "estrellas": 5,
+      "ciudad": "Barcelona",
+      "provincia": "Barcelona",
+      "latitud": 41.3902,
+      "longitud": 2.1966,
+      "web": "www.hotelartsbarcelona.com"
+    },
+    {
+      "nombre": "Mandarin Oriental Barcelona",
+      "estrellas": 5,
+      "ciudad": "Barcelona",
+      "provincia": "Barcelona",
+      "latitud": 41.3895,
+      "longitud": 2.1645,
+      "web": "www.mandarinoriental.com/barcelona"
+    },
+    {
+      "nombre": "Hotel El Palace Barcelona",
+      "estrellas": 5,
+      "ciudad": "Barcelona",
+      "provincia": "Barcelona",
+      "latitud": 41.3847,
+      "longitud": 2.1649,
+      "web": "www.hotelpalacebarcelona.com"
+    },
+    {
+      "nombre": "Majestic Hotel & Spa Barcelona",
+      "estrellas": 5,
+      "ciudad": "Barcelona",
+      "provincia": "Barcelona",
+      "latitud": 41.3939,
+      "longitud": 2.1634,
+      "web": "www.hotelmajestic.es"
+    },
+    {
+      "nombre": "Cotton House Hotel",
+      "estrellas": 5,
+      "ciudad": "Barcelona",
+      "provincia": "Barcelona",
+      "latitud": 41.3853,
+      "longitud": 2.1665,
+      "web": "www.hotelcottonhouse.com"
+    },
+    {
+      "nombre": "Hotel W Barcelona",
+      "estrellas": 5,
+      "ciudad": "Barcelona",
+      "provincia": "Barcelona",
+      "latitud": 41.3688,
+      "longitud": 2.1906,
+      "web": "www.marriott.com"
+    },
+    {
+      "nombre": "Monument Hotel Barcelona",
+      "estrellas": 5,
+      "ciudad": "Barcelona",
+      "provincia": "Barcelona",
+      "latitud": 41.3943,
+      "longitud": 2.1642,
+      "web": "www.monumenthotel.com"
+    },
+    {
+      "nombre": "Hotel Ohla Barcelona",
+      "estrellas": 5,
+      "ciudad": "Barcelona",
+      "provincia": "Barcelona",
+      "latitud": 41.3863,
+      "longitud": 2.1751,
+      "web": "www.ohlahotel.com"
+    },
+    {
+      "nombre": "Hotel Claris Barcelona",
+      "estrellas": 5,
+      "ciudad": "Barcelona",
+      "provincia": "Barcelona",
+      "latitud": 41.3918,
+      "longitud": 2.1637,
+      "web": "www.derbyhotels.com"
+    },
+    {
+      "nombre": "Hotel Omm Barcelona",
+      "estrellas": 4,
+      "ciudad": "Barcelona",
+      "provincia": "Barcelona",
+      "latitud": 41.3944,
+      "longitud": 2.1614,
+      "web": "www.hotelomm.es"
+    },
+    {
+      "nombre": "Hotel Maria Cristina",
+      "estrellas": 5,
+      "ciudad": "San Sebastián",
+      "provincia": "Guipúzcoa",
+      "latitud": 43.3176,
+      "longitud": -1.9832,
+      "web": "www.marriott.com"
+    },
+    {
+      "nombre": "Hotel de Londres y de Inglaterra",
+      "estrellas": 4,
+      "ciudad": "San Sebastián",
+      "provincia": "Guipúzcoa",
+      "latitud": 43.3223,
+      "longitud": -1.9875,
+      "web": "www.hlondres.com"
+    },
+    {
+      "nombre": "Villa Favorita",
+      "estrellas": 4,
+      "ciudad": "San Sebastián",
+      "provincia": "Guipúzcoa",
+      "latitud": 43.3091,
+      "longitud": -2.0020,
+      "web": "www.villafavorita.com"
+    },
+    {
+      "nombre": "Hotel Carlton",
+      "estrellas": 5,
+      "ciudad": "Bilbao",
+      "provincia": "Vizcaya",
+      "latitud": 43.2629,
+      "longitud": -2.9267,
+      "web": "www.hotelcarlton.es"
+    },
+    {
+      "nombre": "Gran Hotel Domine Bilbao",
+      "estrellas": 5,
+      "ciudad": "Bilbao",
+      "provincia": "Vizcaya",
+      "latitud": 43.2687,
+      "longitud": -2.9375,
+      "web": "www.granhoteldominebilbao.com"
+    },
+    {
+      "nombre": "Melia Bilbao",
+      "estrellas": 4,
+      "ciudad": "Bilbao",
+      "provincia": "Vizcaya",
+      "latitud": 43.2668,
+      "longitud": -2.9345,
+      "web": "www.melia.com"
+    },
+    {
+      "nombre": "Marqués de Riscal",
+      "estrellas": 5,
+      "ciudad": "Elciego",
+      "provincia": "Álava",
+      "latitud": 42.5160,
+      "longitud": -2.6188,
+      "web": "www.hotel-marquesderiscal.com"
+    },
+    {
+      "nombre": "Hotel Alfonso XIII",
+      "estrellas": 5,
+      "ciudad": "Sevilla",
+      "provincia": "Sevilla",
+      "latitud": 37.3818,
+      "longitud": -5.9907,
+      "web": "www.marriott.com"
+    },
+    {
+      "nombre": "Hotel Colón Gran Meliá",
+      "estrellas": 5,
+      "ciudad": "Sevilla",
+      "provincia": "Sevilla",
+      "latitud": 37.3894,
+      "longitud": -5.9952,
+      "web": "www.melia.com"
+    },
+    {
+      "nombre": "EME Catedral Hotel",
+      "estrellas": 5,
+      "ciudad": "Sevilla",
+      "provincia": "Sevilla",
+      "latitud": 37.3860,
+      "longitud": -5.9929,
+      "web": "www.emecatedralhotel.com"
+    },
+    {
+      "nombre": "Hotel Inglaterra Sevilla",
+      "estrellas": 4,
+      "ciudad": "Sevilla",
+      "provincia": "Sevilla",
+      "latitud": 37.3873,
+      "longitud": -5.9933,
+      "web": "www.hotelinglaterra.es"
+    },
+    {
+      "nombre": "Hotel Melia Sevilla",
+      "estrellas": 4,
+      "ciudad": "Sevilla",
+      "provincia": "Sevilla",
+      "latitud": 37.3946,
+      "longitud": -5.9824,
+      "web": "www.melia.com"
+    },
+    {
+      "nombre": "Gran Hotel Miramar",
+      "estrellas": 5,
+      "ciudad": "Málaga",
+      "provincia": "Málaga",
+      "latitud": 36.7147,
+      "longitud": -4.4183,
+      "web": "www.granhotelmiramarmalaga.com"
+    },
+    {
+      "nombre": "Hotel Molina Lario",
+      "estrellas": 4,
+      "ciudad": "Málaga",
+      "provincia": "Málaga",
+      "latitud": 36.7213,
+      "longitud": -4.4198,
+      "web": "www.hotelmolinalario.com"
+    },
+    {
+      "nombre": "Vincci Selección Posada del Patio",
+      "estrellas": 5,
+      "ciudad": "Málaga",
+      "provincia": "Málaga",
+      "latitud": 36.7189,
+      "longitud": -4.4189,
+      "web": "www.vinccihoteles.com"
+    },
+    {
+      "nombre": "Puente Romano Beach Resort",
+      "estrellas": 5,
+      "ciudad": "Marbella",
+      "provincia": "Málaga",
+      "latitud": 36.4957,
+      "longitud": -4.9127,
+      "web": "www.puenteromano.com"
+    },
+    {
+      "nombre": "Marbella Club Hotel",
+      "estrellas": 5,
+      "ciudad": "Marbella",
+      "provincia": "Málaga",
+      "latitud": 36.4984,
+      "longitud": -4.9248,
+      "web": "www.marbellaclub.com"
+    },
+    {
+      "nombre": "Hotel Villa Padierna Palace",
+      "estrellas": 5,
+      "ciudad": "Marbella",
+      "provincia": "Málaga",
+      "latitud": 36.5145,
+      "longitud": -5.0021,
+      "web": "www.villapadierna.com"
+    },
+    {
+      "nombre": "Las Dunas Hotel",
+      "estrellas": 5,
+      "ciudad": "Estepona",
+      "provincia": "Málaga",
+      "latitud": 36.4248,
+      "longitud": -5.0482,
+      "web": "www.las-dunas.com"
+    },
+    {
+      "nombre": "Hotel Las Arenas Balneario Resort",
+      "estrellas": 5,
+      "ciudad": "Valencia",
+      "provincia": "Valencia",
+      "latitud": 39.4741,
+      "longitud": -0.3300,
+      "web": "www.hotel-lasarenas.com"
+    },
+    {
+      "nombre": "Westin Valencia",
+      "estrellas": 5,
+      "ciudad": "Valencia",
+      "provincia": "Valencia",
+      "latitud": 39.4583,
+      "longitud": -0.3518,
+      "web": "www.marriott.com"
+    },
+    {
+      "nombre": "Hotel Balneario Las Arenas",
+      "estrellas": 5,
+      "ciudad": "Valencia",
+      "provincia": "Valencia",
+      "latitud": 39.4737,
+      "longitud": -0.3295,
+      "web": "www.hotelvalencialasarenas.com"
+    },
+    {
+      "nombre": "SH Valencia Palace",
+      "estrellas": 4,
+      "ciudad": "Valencia",
+      "provincia": "Valencia",
+      "latitud": 39.4780,
+      "longitud": -0.3550,
+      "web": "www.sh-hoteles.com"
+    },
+    {
+      "nombre": "Hotel Hospes Palau de la Mar",
+      "estrellas": 5,
+      "ciudad": "Valencia",
+      "provincia": "Valencia",
+      "latitud": 39.4741,
+      "longitud": -0.3687,
+      "web": "www.hospes.com"
+    },
+    {
+      "nombre": "Parador de Granada",
+      "estrellas": 4,
+      "ciudad": "Granada",
+      "provincia": "Granada",
+      "latitud": 37.1766,
+      "longitud": -3.5894,
+      "web": "www.parador.es"
+    },
+    {
+      "nombre": "Alhambra Palace Hotel",
+      "estrellas": 5,
+      "ciudad": "Granada",
+      "provincia": "Granada",
+      "latitud": 37.1753,
+      "longitud": -3.5899,
+      "web": "www.h-alhambrapalace.es"
+    },
+    {
+      "nombre": "Hotel Villa Oniria",
+      "estrellas": 5,
+      "ciudad": "Granada",
+      "provincia": "Granada",
+      "latitud": 37.1829,
+      "longitud": -3.5982,
+      "web": "www.villaoniria.com"
+    },
+    {
+      "nombre": "Gran Hotel Luna de Granada",
+      "estrellas": 4,
+      "ciudad": "Granada",
+      "provincia": "Granada",
+      "latitud": 37.1691,
+      "longitud": -3.5982,
+      "web": "www.lunagranada.com"
+    },
+    {
+      "nombre": "Gran Hotel Bahía del Duque",
+      "estrellas": 5,
+      "ciudad": "Adeje",
+      "provincia": "Tenerife",
+      "latitud": 28.0933582,
+      "longitud": -16.7446085,
+      "web": "www.bahia-duque.com"
+    },
+    {
+      "nombre": "Royal Hideaway Corales Beach",
+      "estrellas": 5,
+      "ciudad": "Adeje",
+      "provincia": "Tenerife",
+      "latitud": 28.0872,
+      "longitud": -16.7403,
+      "web": "www.barcelo.com"
+    },
+    {
+      "nombre": "The Ritz-Carlton Abama",
+      "estrellas": 5,
+      "ciudad": "Guía de Isora",
+      "provincia": "Tenerife",
+      "latitud": 28.1556,
+      "longitud": -16.7935,
+      "web": "www.ritzcarlton.com"
+    },
+    {
+      "nombre": "Hotel Jardines de Nivaria",
+      "estrellas": 5,
+      "ciudad": "Adeje",
+      "provincia": "Tenerife",
+      "latitud": 28.0901,
+      "longitud": -16.7412,
+      "web": "www.adrianhoteles.com"
+    },
+    {
+      "nombre": "Hotel Botánico",
+      "estrellas": 5,
+      "ciudad": "Puerto de la Cruz",
+      "provincia": "Tenerife",
+      "latitud": 28.4105,
+      "longitud": -16.5465,
+      "web": "www.hotelbotanico.com"
+    },
+    {
+      "nombre": "Sheraton La Caleta Resort",
+      "estrellas": 5,
+      "ciudad": "Adeje",
+      "provincia": "Tenerife",
+      "latitud": 28.0917,
+      "longitud": -16.7365,
+      "web": "www.marriott.com"
+    },
+    {
+      "nombre": "Hotel Santa Catalina",
+      "estrellas": 5,
+      "ciudad": "Las Palmas de Gran Canaria",
+      "provincia": "Gran Canaria",
+      "latitud": 28.1356,
+      "longitud": -15.4375,
+      "web": "www.hotelsantacatalina.com"
+    },
+    {
+      "nombre": "Seaside Grand Hotel Residencia",
+      "estrellas": 5,
+      "ciudad": "Maspalomas",
+      "provincia": "Gran Canaria",
+      "latitud": 27.7595,
+      "longitud": -15.5845,
+      "web": "www.seasidehotels.de"
+    },
+    {
+      "nombre": "Lopesan Villa del Conde",
+      "estrellas": 5,
+      "ciudad": "Meloneras",
+      "provincia": "Gran Canaria",
+      "latitud": 27.7413,
+      "longitud": -15.5916,
+      "web": "www.lopesan.com"
+    },
+    {
+      "nombre": "Hotel Villa VIK",
+      "estrellas": 5,
+      "ciudad": "San José",
+      "provincia": "Lanzarote",
+      "latitud": 28.9213,
+      "longitud": -13.7885,
+      "web": "www.hotelvillavik.com"
+    },
+    {
+      "nombre": "Hotel Princesa Yaiza",
+      "estrellas": 5,
+      "ciudad": "Playa Blanca",
+      "provincia": "Lanzarote",
+      "latitud": 28.8612,
+      "longitud": -13.8317,
+      "web": "www.princesayaiza.com"
+    },
+    {
+      "nombre": "AC Hotel Palacio de Santa Paula",
+      "estrellas": 5,
+      "ciudad": "Granada",
+      "provincia": "Granada",
+      "latitud": 37.1737,
+      "longitud": -3.6007,
+      "web": "www.marriott.com"
+    },
+    {
+      "nombre": "Hotel Villa Magna",
+      "estrellas": 5,
+      "ciudad": "Santander",
+      "provincia": "Cantabria",
+      "latitud": 43.4623,
+      "longitud": -3.8099,
+      "web": "www.hotelvillamagna.es"
+    },
+    {
+      "nombre": "Hotel Real Villa Universitaria",
+      "estrellas": 4,
+      "ciudad": "Oviedo",
+      "provincia": "Asturias",
+      "latitud": 43.3619,
+      "longitud": -5.8447,
+      "web": "www.eurostarshotels.com"
+    },
+    {
+      "nombre": "Gran Hotel Balneario de Puente Viesgo",
+      "estrellas": 4,
+      "ciudad": "Puente Viesgo",
+      "provincia": "Cantabria",
+      "latitud": 43.2921,
+      "longitud": -3.9658,
+      "web": "www.granhotelbalneario.com"
+    },
+    {
+      "nombre": "Parador de Santiago",
+      "estrellas": 5,
+      "ciudad": "Santiago de Compostela",
+      "provincia": "A Coruña",
+      "latitud": 42.8783,
+      "longitud": -8.5447,
+      "web": "www.parador.es"
+    },
+    {
+      "nombre": "AC Hotel Palacio Universal",
+      "estrellas": 4,
+      "ciudad": "Vigo",
+      "provincia": "Pontevedra",
+      "latitud": 42.2406,
+      "longitud": -8.7207,
+      "web": "www.marriott.com"
+    },
+    {
+      "nombre": "Gran Hotel La Perla",
+      "estrellas": 4,
+      "ciudad": "Pamplona",
+      "provincia": "Navarra",
+      "latitud": 42.8169,
+      "longitud": -1.6432,
+      "web": "www.granhotellaperla.com"
+    },
+    {
+      "nombre": "Hotel Mas La Boella",
+      "estrellas": 5,
+      "ciudad": "La Canonja",
+      "provincia": "Tarragona",
+      "latitud": 41.1356,
+      "longitud": 1.2189,
+      "web": "www.maslaboella.com"
+    },
+    {
+      "nombre": "Hotel Camiral",
+      "estrellas": 5,
+      "ciudad": "Caldes de Malavella",
+      "provincia": "Girona",
+      "latitud": 41.8344,
+      "longitud": 2.7684,
+      "web": "www.hotelcamiral.com"
+    },
+    {
+      "nombre": "Hotel Mas de Torrent",
+      "estrellas": 5,
+      "ciudad": "Torrent",
+      "provincia": "Girona",
+      "latitud": 41.9812,
+      "longitud": 3.0892,
+      "web": "www.mastorrent.com"
+    },
+    {
+      "nombre": "Hotel La Caminera Club de Campo",
+      "estrellas": 5,
+      "ciudad": "Tarragona",
+      "provincia": "Tarragona",
+      "latitud": 41.1189,
+      "longitud": 1.2445,
+      "web": "www.lacaminera.com"
+    },
+    {
+      "nombre": "Hotel Castell d'Empordà",
+      "estrellas": 5,
+      "ciudad": "La Bisbal d'Empordà",
+      "provincia": "Girona",
+      "latitud": 41.9632,
+      "longitud": 3.0401,
+      "web": "www.castelldemporda.com"
+    },
+    {
+      "nombre": "Hospes Palacio de los Patos",
+      "estrellas": 5,
+      "ciudad": "Granada",
+      "provincia": "Granada",
+      "latitud": 37.1689,
+      "longitud": -3.6006,
+      "web": "www.hospes.com"
+    },
+    {
+      "nombre": "NH Collection Palacio de Tepa",
+      "estrellas": 4,
+      "ciudad": "Madrid",
+      "provincia": "Madrid",
+      "latitud": 40.4136,
+      "longitud": -3.7065,
+      "web": "www.nh-hotels.com"
+    },
+    {
+      "nombre": "Hotel Castillo de Gorraiz",
+      "estrellas": 4,
+      "ciudad": "Pamplona",
+      "provincia": "Navarra",
+      "latitud": 42.7945,
+      "longitud": -1.7123,
+      "web": "www.hotelcastillodegorraiz.com"
+    },
+    {
+      "nombre": "Eurostars Hotel de la Reconquista",
+      "estrellas": 5,
+      "ciudad": "Oviedo",
+      "provincia": "Asturias",
+      "latitud": 43.3639,
+      "longitud": -5.8457,
+      "web": "www.eurostarshotels.com"
+    },
+    {
+      "nombre": "Hotel María Cristina San Sebastián",
+      "estrellas": 5,
+      "ciudad": "San Sebastián",
+      "provincia": "Guipúzcoa",
+      "latitud": 43.3176,
+      "longitud": -1.9832,
+      "web": "www.hotel-mariacristina.com"
+    },
+    {
+      "nombre": "Eurostars Gran Hotel La Toja",
+      "estrellas": 5,
+      "ciudad": "O Grove",
+      "provincia": "Pontevedra",
+      "latitud": 42.4879,
+      "longitud": -8.8642,
+      "web": "www.eurostarshotels.com"
+    },
+    {
+      "nombre": "Hotel Mas Passamaner",
+      "estrellas": 5,
+      "ciudad": "La Selva del Camp",
+      "provincia": "Tarragona",
+      "latitud": 41.2156,
+      "longitud": 1.1378,
+      "web": "www.maspassamaner.com"
+    }
+  ]
+}
