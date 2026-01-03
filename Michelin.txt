@@ -1,66 +1,4 @@
-16 restaurantes 3 estrellas Michelin (completo)
-
-    Arriondas – Casa Marcial
-    Barcelona – ABaC
-    Barcelona – Cocina Hermanos Torres
-    Barcelona – Disfrutar
-    Barcelona – Lasarte
-    Cáceres – Atrio
-    Córdoba – Noor
-    Dénia – Quique Dacosta
-    Donostia / San Sebastián – Akelaŕe
-    Donostia / San Sebastián – Arzak
-    El Puerto de Santa María – Aponiente
-    Girona – El Celler de Can Roca
-    Larrabetzu – Azurmendi
-    Lasarte – Oria – Martín Berasategui
-    Madrid – DiverXO
-    Villaverde de Pontones – Cenador de Amós
-
-37 restaurantes 2 estrellas Michelin (completo)
-
-    Adeje – El Rincón de Juan Carlos
-    Almansa – Maralba
-    Barcelona – Aleia – NOVEDAD
-    Barcelona – Enigma – NOVEDAD
-    Barcelona – Cinc Sentits
-    Barcelona – Enoteca Paco Pérez
-    Barcelona – Mont Bar – NOVEDAD
-    Bellvís – La Boscana – NOVEDAD
-    Canyamel – Voro
-    Chiclana de la Frontera – Alevante
-    Cocentaina – L’Escaleta
-    Corçà – Bo.TiC
-    Daroca de Rioja – Venta Moncalvillo
-    Donostia / San Sebastián – Amelia by Paulo Airaudo
-    El Palmar – Cabaña Buenavista
-    Errenteria – Mugaritz
-    Ezcaray – El Portal de Echaurren
-    Guía de Isora – M.B
-    Jerez de la Frontera – LÚ Cocina y Alma
-    Llançà – Miramar
-    Madrid – Coque
-    Madrid – Deessa
-    Madrid – DSTAgE
-    Madrid – Paco Roncero
-    Madrid – Ramón Freixa Atelier – NOVEDAD
-    Madrid – Smoked Room
-    Marbella – Skina
-    O Grove – Culler de Pau
-    Olot – Les Cols
-    Raxó – Pepe Vieria
-    Ronda – Bardal
-    Santa Comba – Retiro da Costiña
-    Toledo – Iván Cerdeño
-    Urdaitz – El Molino de Urdániz
-    València – El Poblet
-    València – Ricard Camarena
-    Xàbia – BonAmb
-
-
-253 restaurantes 1 estrella Michelin
-
-    A Coruña – Árbore da Veira
+A Coruña – Árbore da Veira
     Adeje – Donaire
     Adeje – Haydée by Víctor Suárez – NOVEDAD
     Adeje – Il Bocconcino by Royal Hideaway
@@ -313,16 +251,3 @@
     Zaragoza – Gente Rara
     Zaragoza – La Prensa
     Zarza de Granadilla – Versátil
-
-423 hoteles 5 estrellas
-
-Tenemos en el los archivos:
-Hoteles:    78
-4 estrellas	17 (FALTAN)
-5 estrellas	61 (FALTAN)
-
-Tenemos en el los archivos:
-restaurantes totales:53
-3 estrellas	 16 (completo)
-2 estrellas	 37 (completo)
-1 estrella  253 (completo)

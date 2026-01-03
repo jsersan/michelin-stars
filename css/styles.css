@@ -20,39 +20,31 @@ body, html {
     top: 29px;
     right: 60px;
     z-index: 1000;
-    background: white;
+    background: white !important; /* Forzamos fondo blanco */
     padding: 9px 15px;
     border-radius: 2px;
     box-shadow: 0 2px 6px rgba(0,0,0,0.3);
-    display: flex;
+    display: flex !important; /* Aseguramos que los botones estén en línea */
     gap: 8px;
     align-items: center;
-}
-
-#language-selector span {
-    color: #ccc;
-    font-weight: normal;
+    width: 250px;
+    justify-content: space-evenly;
 }
 
 .lang-btn {
-    background: none;
-    border: none;
+    background: none !important;
+    border: none !important;
     font-size: 14px;
     font-weight: bold;
     cursor: pointer;
-    padding: 0px 0px;
-    border-radius: 3px;
-    transition: all 0.3s;
+    padding: 4px 12px;
     color: #666;
 }
 
-.lang-btn:hover {
-    background: #f0f0f0;
-}
-
 .lang-btn.active {
-    background: #1a73e8;
-    color: white;
+    background: #1a73e8 !important;
+    color: white !important;
+    border-radius: 3px;
 }
 
 /* Leyenda */
@@ -101,16 +93,19 @@ body, html {
 
 .legend-category > a img {
     margin-right: 8px;
+    flex-shrink: 0;
 }
 
 .legend-category > a .category-text {
     flex: 1;
+    text-align: left;
 }
 
 .legend-category > a .arrow {
     font-size: 10px;
     transition: transform 0.3s;
     margin-left: 5px;
+    flex-shrink: 0;
 }
 
 .legend-category > a .arrow.open {
@@ -122,7 +117,7 @@ body, html {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease-out;
-    padding-left: 28px;
+    padding-left: 20px;
 }
 
 .submenu a {
@@ -131,11 +126,14 @@ body, html {
     font-size: 13px;
     display: flex;
     align-items: center;
+    justify-content: flex-start;
     padding: 6px 8px;
     margin: 2px 0;
     border-radius: 3px;
     transition: background 0.2s;
     cursor: pointer;
+    text-align: left;
+    gap: 6px;
 }
 
 .submenu a:hover {
@@ -144,21 +142,80 @@ body, html {
 
 .submenu a .star-icon {
     font-size: 12px;
-    margin-right: 6px;
-    min-width: 60px;
+    flex-shrink: 0;
+    min-width: 40px;
 }
 
 .submenu a .category-text {
+    text-align: left;
     flex: 1;
+}
+
+/* Filtro de Comunidades Autónomas */
+.ca-filter {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #e0e0e0;
+}
+
+.ca-filter label {
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.ca-filter select {
+    width: 100%;
+    padding: 8px;
+    font-size: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background: white;
+    cursor: pointer;
+    transition: border-color 0.2s;
+}
+
+.ca-filter select:hover {
+    border-color: #1a73e8;
+}
+
+.ca-filter select:focus {
+    outline: none;
+    border-color: #1a73e8;
+    box-shadow: 0 0 0 2px rgba(26, 115, 232, 0.1);
 }
 
 /* InfoWindow */
 .gm-style-iw {
-    max-width: 350px !important;
+    max-width: 400px !important;
+    min-width: 320px !important;
+    border-radius: 8px !important;
 }
 
 .gm-style-iw-d {
     overflow: auto !important;
+    max-height: 400px !important;
+    padding: 0 !important;
+    min-width: 320px !important;
+}
+
+.gm-style-iw-c {
+    padding: 0 !important;
+    border-radius: 8px !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+    min-width: 320px !important;
+}
+
+/* Ocultar el botón de cierre por defecto de Google Maps */
+.gm-ui-hover-effect {
+    display: none !important;
+}
+
+.gm-style .gm-style-iw-t::after {
+    background: linear-gradient(45deg, rgba(255,255,255,0.9) 50%, transparent 51%, transparent) !important;
+    box-shadow: -2px 2px 2px 0 rgba(0, 0, 0, 0.1) !important;
 }
 
 /* Responsive */
@@ -173,4 +230,69 @@ body, html {
     #legend {
         width: 220px;
     }
+    
+    #language-selector {
+        width: 220px;
+    }
 }
+/* Full width popup fixes */
+/* 1. RESET GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+#mapa {
+    height: 100%;
+    width: 100%;
+}
+
+/* 2. INTERFAZ (Selector e Idioma) */
+#language-selector {
+    position: absolute;
+    top: 20px;
+    right: 60px;
+    z-index: 1000;
+    background: white;
+    padding: 8px 15px;
+    border-radius: 4px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.lang-btn {
+    background: none;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    color: #666;
+    padding: 4px 8px;
+}
+
+.lang-btn.active {
+    color: #1a73e8;
+    border-bottom: 2px solid #1a73e8;
+}
+
+/* 3. LEYENDA */
+#legend {
+    position: absolute;
+    top: 70px;
+    right: 60px;
+    background: white;
+    padding: 15px;
+    border-radius: 4px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    width: 250px;
+    z-index: 1000;
+}
+
+
