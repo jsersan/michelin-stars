@@ -1,2 +1,1 @@
 # michelin-starts
-# michelin-stars
